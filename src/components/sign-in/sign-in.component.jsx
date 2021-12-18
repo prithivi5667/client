@@ -19,7 +19,7 @@ class SignIn extends React.Component {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json',
+                "Content-type": "application/x-www-form-urlencoded; charset=UTF-8",
                 "Access-Control-Allow-Origin": "*"
             },
             credentials: true,
