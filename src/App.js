@@ -46,7 +46,7 @@ class App extends React.Component {
         this.setState({isLoggedIn: 'false'});
       }
     })
-    .catch(err => console.log(err))
+    .catch(err => console.log(err.message))
 
   }
   
