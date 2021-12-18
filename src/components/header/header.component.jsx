@@ -15,7 +15,7 @@ const Header = (props) => {
         })
         .then(res => {
             alert("You have logged out of your account!");
-            window.location.replace("http://localhost:3000");
+            window.location.replace("https://hopeful-lovelace-8ca5c3.netlify.app");
         })
         .catch(err => console.log(err));
     }

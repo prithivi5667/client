@@ -32,7 +32,7 @@ class PayPage extends React.Component {
         }
 
         else{
-            fetch('http://localhost:3001/api/pay',{
+            fetch('https://movie-pt.herokuapp.com/api/pay',{
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',

@@ -32,9 +32,10 @@ class App extends React.Component {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        "Access-Control-Allow-Origin": "*"
       },
-      credentials: 'include'
+      credentials: true
     })
     .then(res => res.json())
     .then(json => {
