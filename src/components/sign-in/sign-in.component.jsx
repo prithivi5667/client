@@ -23,7 +23,7 @@ class SignIn extends React.Component {
                 'Content-Type': 'application/json',
                 "Access-Control-Allow-Origin": "*"
             },
-            credentials: 'include',
+            credentials: 'same-origin',
             body: JSON.stringify(this.state)
         })
         .then(res => {

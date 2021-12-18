@@ -22,7 +22,7 @@ class CollectionDetailsMovie extends React.Component {
                 'Content-Type': 'application/json',
                 "Access-Control-Allow-Origin": "*"
             },
-            credentials: true
+            credentials: 'same-origin'
         })
         .then(res => res.json())
         .then(json => {
