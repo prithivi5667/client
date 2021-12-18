@@ -11,7 +11,7 @@ const Header = (props) => {
                 'Content-Type': 'application/json',
                 "Access-Control-Allow-Origin": "*"
             },
-            credentials: true
+            credentials: true,
         })
         .then(res => {
             alert("You have logged out of your account!");
