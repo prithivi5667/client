@@ -11,7 +11,7 @@ const BookShow = ({ match }) => {
             'Content-Type': 'application/json',
             "Access-Control-Allow-Origin": "*"
         },
-        credentials: true,
+        credentials: 'same-origin',
         body: JSON.stringify({bookingDetails: match.params.imdbID + '/' + match.params.date + '/' + match.params.show + '/'})
     })
     .then(res => res.json())

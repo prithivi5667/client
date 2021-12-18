@@ -26,7 +26,7 @@ class SignUp extends React.Component {
                     'Content-Type': 'application/json',
                     "Access-Control-Allow-Origin": "*"
                 },
-                credentials: true,
+                credentials:'same-origin',
                 body: JSON.stringify(this.state)
             })
             .then(res => {
