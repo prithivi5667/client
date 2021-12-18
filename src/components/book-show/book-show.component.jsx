@@ -5,13 +5,13 @@ import './book-show.styles.scss';
 
 const BookShow = ({ match }) => {
     fetch('https://movie-pt.herokuapp.com/api/seats',{
+    //fetch('http://localhost:3001/api/seats',{
         method: 'POST',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            "Access-Control-Allow-Origin": "*"
         },
-        credentials: 'same-origin',
+        credentials: 'include',
         body: JSON.stringify({bookingDetails: match.params.imdbID + '/' + match.params.date + '/' + match.params.show + '/'})
     })
     .then(res => res.json())

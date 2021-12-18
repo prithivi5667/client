@@ -20,13 +20,13 @@ class SignUp extends React.Component {
 
         if(this.state.password === this.state.confirmPassword) {
             fetch('https://movie-pt.herokuapp.com/api/register',{
+           // fetch('http://localhost:3001/api/register',{
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
-                    "Access-Control-Allow-Origin": "*"
                 },
-                credentials:'same-origin',
+                credentials:'include',
                 body: JSON.stringify(this.state)
             })
             .then(res => {

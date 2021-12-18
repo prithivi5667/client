@@ -5,17 +5,18 @@ import './header.styles.scss';
 const Header = (props) => {
     function handleLogout() {
         fetch('https://movie-pt.herokuapp.com/api/logout', {
+       // fetch('http://localhost:3001/api/logout', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                "Access-Control-Allow-Origin": "*"
             },
-            credentials: 'same-origin',
+            credentials: 'include',
         })
         .then(res => {
             alert("You have logged out of your account!");
             window.location.replace("https://hopeful-lovelace-8ca5c3.netlify.app");
+           //window.location.replace("http://localhost:3000");
         })
         .catch(err => console.log(err));
     }

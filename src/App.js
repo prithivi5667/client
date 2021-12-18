@@ -29,14 +29,14 @@ class App extends React.Component {
 
   componentDidMount(){
     fetch('https://movie-pt.herokuapp.com/api/signedin', {
+    //fetch('http://localhost:3001/api/signedin', {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        "Access-Control-Allow-Origin": "*"
        
       },
-      credentials:'same-origin',
+      credentials:'include',
     })
     .then(res => res.json())
     .then(json => {

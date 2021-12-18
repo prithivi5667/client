@@ -16,14 +16,14 @@ class SignIn extends React.Component {
         event.preventDefault();
 
         fetch('https://movie-pt.herokuapp.com/api/signin',{
+           // fetch('http://localhost:3001/api/signin',{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
                 
                 'Content-Type': 'application/json',
-                "Access-Control-Allow-Origin": "*"
             },
-            credentials: 'same-origin',
+            credentials: 'include',
             body: JSON.stringify(this.state)
         })
         .then(res => {
@@ -35,6 +35,8 @@ class SignIn extends React.Component {
                 alert("ERROR: Fill all the required fields");
             }
             else{
+                console.log("here")
+                console.log(res)
                 this.props.onAuthChange('true');
                 this.props.history.push('/');
             }

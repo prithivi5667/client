@@ -7,6 +7,7 @@ import BookShow from '../../components/book-show/book-show.component';
 import PayPage from '../pay-page/pay-page.component';
 
 const BookShowPage = ({ match }) => {
+    console.log(match)
     return(
         <div>
             <Switch>
