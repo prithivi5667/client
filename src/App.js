@@ -33,7 +33,7 @@ class App extends React.Component {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        "Access-Control-Allow-Origin": "*"
+       
       },
       credentials: true
     })
