@@ -21,7 +21,7 @@ class SignIn extends React.Component {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            credentials: 'include',
+            credentials: true,
             body: JSON.stringify(this.state)
         })
         .then(res => {
