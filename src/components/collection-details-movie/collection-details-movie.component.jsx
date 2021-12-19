@@ -74,7 +74,7 @@ class CollectionDetailsMovie extends React.Component {
                     </div>
                 </div>
                 {
-                    this.state.isLoggedIn==='true' ?
+                    this.state.isLoggedIn==='false' ?
                     (
                         <Link to={`${this.props.match.url}/${currentCollection.Title.replace(/ /g, "+")}`}>
                             <div className='book-now'>
