@@ -72,10 +72,10 @@ class PayPage extends React.Component {
                         <input className='input' name='state' type='text' label='State' placeholder='State' value={this.state.state} onChange={this.handleChange} required />
                         <input className='input' name='zip' type='text' label='Zip' placeholder='Zip' value={this.state.zip} onChange={this.handleChange} required />
                         <input className='input' name='nameOnCard' type='text' label='Name on Card' placeholder='Name on Card' value={this.state.nameOnCard} onChange={this.handleChange} required />
-                        <input className='input' name='cardNumber' type='text' label='Card Number' placeholder='Card Number' value={this.state.cardNumber} onChange={this.handleChange} required />
+                        <input className='input' name='cardNumber' type='password' label='Card Number' placeholder='Card Number' value={this.state.cardNumber} onChange={this.handleChange} required />
                         <input className='input' name='expirationMonth' type='text' label='Expiration Month' placeholder='Expiration Month' value={this.state.expirationMonth} onChange={this.handleChange} required />
                         <input className='input' name='expirationYear' type='text' label='Expiration Year' placeholder='Expiration Year' value={this.state.expirationYear} onChange={this.handleChange} required />
-                        <input className='input' name='cvv' type='text' label='CVV' placeholder='CVV' value={this.state.cvv} onChange={this.handleChange} required />
+                        <input className='input' name='cvv' type='password' label='CVV' placeholder='CVV' value={this.state.cvv} onChange={this.handleChange} required />
                         <div>
                             <button className='button' type='submit' onClick={this.handleSubmit}>Make Payment</button>
                             <span>Total amount to be paid: Rs.100</span>
